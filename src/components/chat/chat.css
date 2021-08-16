@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+::-webkit-scrollbar {
+  @apply w-0 sm:w-[4px] !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(10, 30, 70, 0.4);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #011f3f;
+  border-radius: 100vh;
+  border: 3px solid #1a446d;
+}
+
+.chat-box {
+  @apply w-full sm:w-11/12 mx-auto rounded-2xl shadow-2xl sm:absolute sm:inset-0 relative sm:m-auto sm:h-[90%]
+     ring ring-blue-900/20 drop-shadow-xl bg-gray-700/10 !important;
+
+  font-family: "Raleway", sans-serif !important;
+}
+
+.ce-chat-list {
+  @apply p-1 font-custom border-r bg-gray-900 sm:bg-transparent border-blue-700/30 !important;
+}
+
+.ce-chat-card,
+.ce-active-chat-card {
+  @apply bg-blue-900/10 mb-2 border border-yellow-500/20 w-11/12 mx-auto rounded-lg !important;
+}
+
+.ce-chat-feed {
+  @apply bg-transparent border-r border-blue-700/30 !important;
+}
+
+.ce-chat-title {
+  @apply bg-transparent !important;
+}
+
+.ce-chat-title-conatainer {
+  @apply bg-gray-900 sm:bg-transparent !important;
+}
+
+.ce-chat-list-mobile-option {
+  @apply !important;
+}
+
+.ce-chat-title-text {
+  @apply text-yellow-600 font-bold text-lg !important;
+}
+
+.ce-my-message-bubble-row {
+  @apply mr-2 text-white !important;
+}
+
+.ce-message-bubble,
+.ce-my-message-bubble {
+  @apply rounded-2xl px-6 py-2 bg-blue-300/30 font-medium mb-2 !important;
+}
+
+.ce-avatar {
+  @apply ml-1 !important;
+}
+
+.ce-message-date-text {
+  @apply text-gray-400 text-xs !important;
+}
+
+.ce-their-message-bubble {
+  @apply bg-gray-50/90 text-black font-medium !important;
+}
+
+.ce-chat-form-container {
+  @apply text-center text-gray-400 font-semibold mb-4 !important;
+}
+
+.ce-chat-subtitle-text,
+.ce-chat-subtitle-message {
+  @apply text-white !important;
+}
+
+#new-chat-plus-button {
+  @apply text-center bg-yellow-600/90 p-0 pb-7 my-auto relative h-6 w-10 rounded-md
+         mt-2 !important;
+}
+
+#toolbar {
+  @apply border border-yellow-500/20 text-white rounded-md relative top-4 sm:static !important;
+}
+
+.ql-container,
+.ql-snow {
+  @apply text-black border border-yellow-500 mb-1 rounded-md bg-gray-100/90 w-[97%] mx-auto !important;
+}
+
+#ce-send-message-button {
+  @apply absolute right-2 pt-0 bottom-8 sm:bottom-[1.2rem] !important;
+}
+
+.ce-settings {
+  @apply font-custom border-none overflow-hidden bg-gray-900 sm:bg-transparent !important;
+}
+
+.ce-settings-container div:nth-of-type(2) {
+  @apply border-0  !important;
+}
+
+.ce-settings-container div:nth-of-type(2) > div {
+  @apply border-0  !important;
+}
+
+.ce-settings-container div:nth-of-type(4) {
+  @apply border-0  !important;
+}
+
+.ce-settings-container div:nth-of-type(4) div {
+  @apply border-0  !important;
+}
+
+.ce-chat-settings-container {
+  @apply mb-3 border-none border-0 !important;
+}
+
+.ce-section-title-container,
+.ce-person-title-container {
+  @apply bg-blue-900/10 mb-2 border text-xs border-yellow-500/20 text-yellow-600 
+    font-normal rounded-md !important;
+}
+
+#ce-add-username-input,
+.ce-input,
+.ce-text-input {
+  @apply rounded-md border-yellow-500/20 p-2 bg-gray-50/90 !important;
+}
+
+.ce-autocomplete-options {
+  @apply bg-gray-500/10 text-black mt-2 border-none border-0 rounded-md !important;
+}
+
+.ce-autocomplete-close {
+  @apply border-none border-0  !important;
+}
+
+.ce-autocomplete-option > div {
+  @apply bg-transparent text-white border-b border-yellow-500/30 text-xs !important;
+}
+
+.ce-photo-section {
+  @apply hidden !important;
+}
+
+#ce-options-drop-down {
+  @apply border border-yellow-500/20 text-yellow-600 bg-blue-900/10 
+    text-xs font-normal rounded-md !important;
+}
+
+#ce-delete-chat-button {
+  @apply rounded-lg bg-red-700 text-gray-100 !important;
+}
+
+#ce-delete-chat-button > span {
+  @apply relative bottom-1 right-2 !important;
+}
+
+.ce-person-container {
+  @apply text-white text-xs relative !important;
+}
+.ce-person-container > .ce-person-text {
+  @apply ml-1 !important;
+}
+
+.ce-chat-settings-mobile-option > div > div {
+  @apply bg-gray-900 !important;
+}
+
+.ce-delete-chat {
+  @apply w-0 h-0 p-0 rounded-none left-32 float-none !important;
+}
+
+.logout-btn {
+  @apply px-3 py-1 w-32 sm:w-max rounded-md text-center text-white 
+    bg-blue-500 hover:bg-blue-400 shadow;
+}
+
+.logout {
+  @apply absolute w-max inset-x-0 mx-auto flex justify-center bottom-2 
+    lg:left-[37.5%] sm:bottom-0 xl:bottom-[2.6rem] z-30;
+}
