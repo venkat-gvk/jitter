@@ -83,7 +83,7 @@
 }
 
 #toolbar {
-  @apply border border-yellow-500/20 text-white rounded-md relative top-4 sm:top-0 !important;
+  @apply border border-yellow-500/20 text-white rounded-md relative top-4 sm:top-0  !important;
 }
 
 .ql-container,
@@ -176,11 +176,11 @@
 }
 
 .logout-btn {
-  @apply px-3 py-1 w-32 sm:w-max rounded-md text-center text-white 
+  @apply px-3 py-1 w-24 sm:w-32 sm:w-max rounded-md text-center text-white 
     bg-blue-500 hover:bg-blue-400 shadow;
 }
 
 .logout {
-  @apply absolute w-max inset-x-0 mx-auto flex justify-center bottom-2 
-    sm:left-52 md:left-[37.5%] md:right-6 xl:right-0 sm:bottom-[2.6rem] z-0 sm:z-10;
+  @apply absolute sm:w-max sm:inset-x-0 mx-auto flex justify-center bottom-[3.6rem] right-3
+    sm:left-52 md:left-[37.5%] md:right-6 xl:right-0 sm:bottom-[2.7rem] z-10 sm:z-10;
 }
