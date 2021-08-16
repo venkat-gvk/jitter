@@ -43,7 +43,7 @@ const Login = () => {
     <>
       {loginError && <PopupModal error={loginError} setError={setLoginError} />}
 
-      <section className="flex justify-center items-center space-y-4 min-h-screen">
+      <section className="flex justify-center items-center space-y-4 min-h-full sm:min-h-screen relative top-12 sm:static">
         <div className="outer-box">
           <div className="inner-box">
             {/* App Name */}

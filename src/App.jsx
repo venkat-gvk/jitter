@@ -15,7 +15,7 @@ import bg from "./bg.jpg";
 function App() {
   return (
     <>
-      <img src={bg} className="absolute z-[-23] h-screen w-full" alt="bg" />
+      <img src={bg} className="absolute z-[-23] h-full w-full" alt="bg" />
       <Router>
         <UserContext>
           <Switch>

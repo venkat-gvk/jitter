@@ -14,7 +14,7 @@
 
   .inner-box {
     @apply min-h-[25rem] rounded-lg  drop-shadow-2xl shadow-2xl bg-gray-900/20 
-      p-8 min-w-[20rem] sm:w-full max-w-md space-y-4;
+      p-8 w-full max-w-md space-y-4;
   }
 
   .submit {
@@ -42,7 +42,7 @@
 
   .error-modal {
     @apply z-20 w-[20rem] sm:w-[28rem] h-10 bg-gray-800/30 rounded-md flex justify-evenly items-center
-      py-1 px-3 text-red-600 text-lg absolute inset-x-0 mx-auto top-28;
+      py-1 px-3 text-red-600 text-lg absolute inset-x-0 mx-auto sm:top-24;
   }
 
   .error-modal-close-btn {
