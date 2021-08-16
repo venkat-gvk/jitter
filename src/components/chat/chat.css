@@ -182,5 +182,5 @@
 
 .logout {
   @apply absolute w-max inset-x-0 mx-auto flex justify-center bottom-2 
-    sm:left-52 md:left-[37.5%] md:right-6 xl:right-0 bottom-2 sm:bottom-[2.6rem] z-0 sm:z-10;
+    sm:left-52 md:left-[37.5%] md:right-6 xl:right-0 sm:bottom-[2.6rem] z-0 sm:z-10;
 }
