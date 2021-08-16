@@ -19,7 +19,7 @@ const Chat = () => {
   const history = useHistory();
 
   useEffect(() => {
-    // if no user is available, go to login page.
+    // if no user is available, go to gandalf.
     if (!user) {
       setTimeout(() => {
         history.push("/you-shall-not-pass");
