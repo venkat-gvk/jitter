@@ -1,6 +1,6 @@
-## Jitter
+# Jitter
 
-# A fun way to chat
+## A fun way to chat
 
 Stack: React, firebase, tailwindcss, react-chat-engine.
 
