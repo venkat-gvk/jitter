@@ -87,7 +87,7 @@
 }
 
 #toolbar {
-  @apply border border-yellow-500/20 text-white rounded-md relative top-4 sm:static !important;
+  @apply border border-yellow-500/20 text-white rounded-md relative top-4 sm:top-0 !important;
 }
 
 .ql-container,
@@ -96,7 +96,7 @@
 }
 
 #ce-send-message-button {
-  @apply absolute right-2 pt-0 bottom-8 sm:bottom-[1.2rem] !important;
+  @apply absolute right-2 pt-0 bottom-8 sm:bottom-4 !important;
 }
 
 .ce-settings {
@@ -186,5 +186,5 @@
 
 .logout {
   @apply absolute w-max inset-x-0 mx-auto flex justify-center bottom-2 
-    lg:left-[37.5%] sm:bottom-0 xl:bottom-[2.6rem] z-30;
+    sm:left-52 md:left-[37.5%] md:right-6 xl:right-0 bottom-2 sm:bottom-[2.6rem] z-30;
 }
