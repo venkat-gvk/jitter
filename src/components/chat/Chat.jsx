@@ -12,13 +12,18 @@ const Chat = () => {
 
   const { auth } = firebaseAuth;
 
-  const user = useContext(authContext);
+  const { userObject } = useContext(authContext);
+
+  const user = userObject;
+
   const history = useHistory();
 
   useEffect(() => {
     // if no user is available, go to login page.
     if (!user) {
-      history.push("/login");
+      setTimeout(() => {
+        history.push("/you-shall-not-pass");
+      }, 1000);
 
       return;
     }
@@ -44,7 +49,9 @@ const Chat = () => {
         <div className="logout">
           <button
             className="logout-btn"
-            onClick={async () => await auth.signOut()}>
+            onClick={async () => {
+              await auth.signOut();
+            }}>
             Sign out
           </button>{" "}
         </div>
