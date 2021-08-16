@@ -9,14 +9,15 @@ export const UserContext = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [userObject, setUserObject] = useState(null);
 
-  const firstVisit = useRef(true);
-
   const createName = useCallback((email) => {
     return email ? email.substring(0, email.indexOf("@")) : "";
     //
   }, []);
 
   const history = useHistory();
+
+  const firstVisit = useRef(true);
+
   const { auth } = firebaseAuth;
 
   // run only on fresh visit and no user is available
@@ -39,24 +40,15 @@ export const UserContext = ({ children }) => {
           });
         }
 
-        setTimeout(() => {
-          firstVisit.current = false;
+        firstVisit.current = false;
 
+        setTimeout(() => {
           setLoading(false);
           history.push("/chatroom");
         }, 1000);
       }
 
-      // if this is the first visit to this page, then
-      else if (!user && firstVisit.current) {
-        setLoading(false);
-        setUserObject(null);
-
-        firstVisit.current = false;
-        history.push("/home");
-      }
-
-      // if no user is currently available and not logged in
+      // if user signedout
       else if (!user && !firstVisit.current) {
         setUserObject(null);
 
@@ -67,13 +59,22 @@ export const UserContext = ({ children }) => {
         }, 1000);
       }
 
+      //if this is the first visit
+      else {
+        setUserObject(null);
+
+        setLoading(false);
+      }
+
       return () => unsubscribe();
     });
-  }, []);
+  }, [history]);
+
+  const value = { userObject };
 
   return (
     <>
-      <authContext.Provider value={userObject}>
+      <authContext.Provider value={value}>
         {loading ? (
           <div className="flex justify-center items-center min-h-screen">
             <Loader
